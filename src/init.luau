@@ -141,10 +141,10 @@ do
 			if self._PointCache3D[origin] then
 				points = self._PointCache3D[origin]
 			else
-				for x = -1, 1 do
-					for y = -1, 1 do
-						for z = -1, 1 do
-							table.insert(points, getPoint3D(self.Seed, origin.X + x, origin.Y + y, origin.Z + z))
+				for pX = -1, 1 do
+					for pY = -1, 1 do
+						for pZ = -1, 1 do
+							table.insert(points, getPoint3D(self.Seed, origin.X + pX, origin.Y + pY, origin.Z + pZ))
 						end
 					end
 				end
@@ -178,10 +178,10 @@ do
 			if self._PointCache2D[origin] then
 				points = self._PointCache2D[origin]
 			else
-				for x = -1, 1 do
-					for y = -1, 1 do
+				for pX = -1, 1 do
+					for pY = -1, 1 do
 						-- if offset == Vector3.zero then
-						table.insert(points, getPoint2D(self.Seed, origin.X + x, origin.Y + y))
+						table.insert(points, getPoint2D(self.Seed, origin.X + pX, origin.Y + pY))
 						-- end
 					end
 				end
@@ -215,10 +215,10 @@ do
 			if self._PointCache3D[origin] then
 				points = self._PointCache3D[origin]
 			else
-				for x = -1, 1 do
-					for y = -1, 1 do
-						for z = -1, 1 do
-							local offset = Vector3.new(x, y, z)
+				for pX = -1, 1 do
+					for pY = -1, 1 do
+						for pZ = -1, 1 do
+							local offset = Vector3.new(pX, pY, pZ)
 							-- if offset == Vector3.zero then
 							table.insert(points, getPoint3D(self.Seed, origin.X + offset.X, origin.Y + offset.Y, origin.Z + offset.Z))
 							-- end
@@ -251,10 +251,10 @@ do
 			if self._PointCache2D[origin] then
 				points = self._PointCache2D[origin]
 			else
-				for x = -1, 1 do
-					for y = -1, 1 do
-						for z = -1, 1 do
-							local offset = Vector3.new(x, y, z)
+				for pX = -1, 1 do
+					for pY = -1, 1 do
+						for pZ = -1, 1 do
+							local offset = Vector3.new(pX, pY, pZ)
 							-- if offset == Vector3.zero then
 							table.insert(points, getPoint2D(self.Seed, origin.X + offset.X, origin.Y + offset.Y))
 							-- end

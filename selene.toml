@@ -5,6 +5,8 @@ exclude = [
 	"*.spec.luau",
 	"*.remodel.lua",
 	"*.rbxmk.lua",
+	"*.bench.lua",
+	"*.bench.luau",
 	"*.d.lua",
 	"*.story.lua",
 	"*.story.luau",
