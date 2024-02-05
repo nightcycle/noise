@@ -1,25 +1,52 @@
 # Usage
 
-```lua
-local noise = Noise.new(12345)
-local value = noise:Perlin(1, 2) -- a value from 0 to 1 (ish)
-```
-
 ## Random
 
 <img src="./media/random.png" alt="random">
+
+```lua
+local seed = 12356
+local x = 0.5
+local y = 0.25
+local noise = Noise.new(seed)
+local value = noise:Random(x,y) -- a value from 0 to 1 (ish)
+```
 
 ## Perlin
 
 <img src="./media/perlin.png" alt="perlin">
 
+```lua
+local seed = 12356
+local x = 0.5
+local y = 0.25
+local noise = Noise.new(seed)
+local value = noise:Perlin(x,y) -- a value from 0 to 1 (ish)
+```
+
 ## Worley / Cellular
 
 <img src="./media/worley.png" alt="worley">
 
+```lua
+local seed = 12356
+local x = 0.5
+local y = 0.25
+local noise = Noise.new(seed)
+local value = noise:Cellular(x,y) -- a value from 0 to 1 (ish)
+```
+
 ## Voronoi
 
 <img src="./media/voronoi.png" alt="voronoi">
+
+```lua
+local seed = 12356
+local x = 0.5
+local y = 0.25
+local noise = Noise.new(seed)
+local value = noise:Voronoi(x,y) -- a value from 0 to 1 (ish)
+```
 
 # Benchmark
 
